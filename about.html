@@ -1,4 +1,5 @@
 ---
+title: 
 layout: default
 section_id: pages
 members:
@@ -54,7 +55,6 @@ members:
     url: http://linkedin.com
   - name: dribbble
     url: http://dribbble.com
-
 skills_left:
 - title: Web Design
   percent: 98
@@ -65,28 +65,25 @@ skills_right:
   percent: 94
 - title: Print
   percent: 87
-
 testimonials_left:
 - author: David Lame - CEO of Wollen store
-  content: “Obcaecati voluptate ullam pariatur reiciendis optio harum
-    quae aut, eveniet explicabo. Commodi pariatur ut provident.”
+  content: "“Obcaecati voluptate ullam pariatur reiciendis optio harum quae aut, eveniet
+    explicabo. Commodi pariatur ut provident.”"
   avatar: images/@stock/author-1.png
 - author: Amy Swan - CEO of Wollen store
-  content: “Obcaecati voluptate ullam pariatur reiciendis optio harum
-    quae aut, eveniet explicabo. ”
+  content: "“Obcaecati voluptate ullam pariatur reiciendis optio harum quae aut, eveniet
+    explicabo. ”"
   avatar: images/@stock/author-3.png
 testimonials_right:
 - author: Sherley Hewai - CEO of Wollen store
-  content: Lorem ipsum dolor sit amet, consectetur adipisicing
-    elit. Explicabo eveniet asperiores ipsum saepe ab, aliquid veritatis incidunt
-    laudantium modi accusamus quidem eum magni.
+  content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo eveniet
+    asperiores ipsum saepe ab, aliquid veritatis incidunt laudantium modi accusamus
+    quidem eum magni.
   avatar: images/@stock/author-2.png
 - author: Lucas Toope - CEO of Wollen store
-  content: Lorem ipsum dolor sit amet, consectetur adipisicing
-    elit. Consectetur rem doloribus veniam alias commodi, dolorem, natus autem neque.
-    Quisquam labore.
+  content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur rem
+    doloribus veniam alias commodi, dolorem, natus autem neque. Quisquam labore.
   avatar: images/@stock/author-4.png
-
 clients:
 - image: images/@stock/client-1.png
 - image: images/@stock/client-2.png
@@ -95,7 +92,6 @@ clients:
 - image: images/@stock/client-5.png
 - image: images/@stock/client-6.png
 ---
-
 <div class="full light-grey centered-text tree">
   <div class="four spacing"></div>
   <div class="section-title">
@@ -154,8 +150,8 @@ clients:
   </div>
   <div class="row">
     <div class="medium-6 columns">
-      <div class='mod modBarGraph'>
-        <ul class='bars'>
+      <div class="mod modBarGraph">
+        <ul class="bars">
           {% for skill in page.skills_left %}
             <li>
               <h4>{{skill.title}}<strong>{{skill.percent}}%</strong></h4>
@@ -166,9 +162,9 @@ clients:
       </div>
     </div>
     <div class="medium-6 columns">
-      <div class='mod modBarGraph'>
-        <ul class='bars'>
-          <ul class='bars'>
+      <div class="mod modBarGraph">
+        <ul class="bars">
+          <ul class="bars">
             {% for skill in page.skills_right %}
               <li>
                 <h4>{{skill.title}}<strong>{{skill.percent}}%</strong></h4>
@@ -209,7 +205,7 @@ clients:
     </div>
     <div class="large-6 columns">
       {% for testimonial in page.testimonials_right %}
-        <div class="quote reverse wow slideInRight" class="wow" data-wow-delay="{{ 0.2 | times:forloop.index0 }}s">
+        <div class="quote reverse wow slideInRight" data-wow-delay="{{ 0.2 | times:forloop.index0 }}s">
           <div class="row">
             <div class="small-3 columns">
               <img src="{{testimonial.avatar}}" alt="auhor">
@@ -226,9 +222,9 @@ clients:
 </div>
 <div class="full light-grey no-padding">
   <div class="two spacing"></div>
-  <div class='row'>
-    <div class='large-12 columns'>
-      <div class='clients'>
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="clients">
         {% for client in page.clients %}
           <div><a href="#"><img alt="" src="{{site.url}}/{{client.image}}"></a></div>
         {% endfor %}
